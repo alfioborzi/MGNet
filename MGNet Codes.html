@@ -1,0 +1,561 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/mgnet.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta id="p7PM3" name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>MGNet Codes</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="Style" -->
+<link href="style-c.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+<link href="p7pm3/p7PM3-01.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="p7pm3/p7PM3scripts.js"></script>
+
+<meta name="keywords" content="multigrid, multilevel, multiscale,
+algebraic multigrid, AMG, MG, open source,
+domain decomposition, aggregation, disaggregation, defect correction,
+partial differential equations, ordinary differential equations,
+mathematics, linear algebra, nonlinear methods,
+optimization, parallel computing, tutorials, conferences, bibliography,
+free software, grids, adaptive grid refinement, coarsening, wavelets,
+interpolation, computer science, physics,
+unicycles, bicycles, tricycles, tandems">
+</head>
+
+<body>
+<div id="header_top">
+<table width="80%" border="0">
+  <tbody>
+    <tr>
+      <td width="41%">
+      <a href="mgnet.html"><img src="resources/anim-mgnet.gif" width="100" height="100" align="center"></a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="mgnet.html"><img src="resources/mgnet.png" width="225" height="50" align="middle"></a>
+      </td>
+      <td width="59%"><div id="p7PM3_1" class="p7PM3-01 p7PM3 p7PM3noscript horiz responsive menu-centered auto-subs sub-left">
+        <div id="p7PM3tb_1" class="pmm3-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
+        <ul>
+          <li><a href="mgnet.html">Home</a></li>
+          <li><a href="mgnet.html#Sponsors">Sponsors</a></li>
+          <li><a href="mgnet-tuts.html">Tutorials</a></li>
+          <li><a href="mgnet-codes.html">Free Software</a>
+            <ul>
+              <li><a href="mgnet-codes-barski.html">Barsky</a></li>
+              <li><a href="mgnet-codes-bdd.html">Sub BDDMenu Item</a></li>
+              <li><a href="mgnet-codes-borzi.html">Borzi</a></li>
+              <li><a href="mgnet-codes-boxmg.html">BoxMG</a></li>
+              <li><a href="mgnet-codes-bunner.html">Bunner</a></li>
+            </ul>
+          </li>
+          <li><a href="mgnet-bib.html">Bibliography</a></li>
+          <li><a href="mgnet-papers.html">Preprints</a></li>
+          <li><a href="mgnet-books.html">Books</a></li>
+          <li><a href="mgnet-digests.html">Newsletters</a></li>
+          <li><a href="mgnet-conferences.html">Conferences</a>
+            <ul>
+              <li><a href="mgnet-conferences.html">Current Year</a></li>
+              <li><a href="mgnet-old-conferences.html">Old</a></li>
+            </ul>
+          </li>
+          <li><a href="mgnet-conferences.html#VirtualProceedings">Proceedings</a></li>
+        </ul>
+        <script type="text/javascript">P7_PM3op('p7PM3_1',1,8,-5,-5,0,1,0,1,0,1,1,1,0,900,1,0,0)</script>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="main"><!-- InstanceBeginEditable name="PageBody" -->
+<h1>Free Software </h1>
+
+<p>A number of software packages are stored on MGNet.
+Some are public domain, some are copyrighted, and some might be copyrighted
+someday (all rights reserved).
+When in doubt, contact the author(s) of the package(s) you are interested
+in.</p>
+
+<p>Please remember that this is freely distributed software.
+Hence, the amount of support you receive will probably be extremely limited,
+if any is provided at all.
+Some of the authors will provide ample support on consulting or contractual
+basis, however.</p>
+
+<p>If you have a multigrid, domain decomposition, or parallel code or package
+that you would like to contribute, please send e-mail to me.</p>
+
+<h2>AMGLab</h2>
+
+<ul>
+  <li><a href="mgnet-codes-amglab.html">link to code</a></li>
+</ul>
+
+<p>Derrick Cerwinsky's copyrighted Matlab algebraic multigrid package.
+The code was written as part of his Ph.D.  dissertation under the direction of
+Craig Douglas.
+A number of smoothers and cycles are provided, a Matlab GUI, runtime analysis,
+graphics, and some built in examples.
+AMG algorithms provided include Ruge-Stueben, Beck, Smoother Aggregation,
+Roughed Aggregation, and the Austrian variant of AMGe.
+It relatively painless to add other AMG algorithms and to run your own
+examples.</p>
+
+<h2>Barsky</h2>
+
+<ul>
+  <li><a href="mgnet-codes-barsky.html">link to code</a></li>
+</ul>
+
+<p>Sandra Barsky's single processor code, written in C, which solves
+non-linear time-dependent 2-D equations.
+In particular, the equation should have the form
+(d/dt)u= (\nabla^2) u + g(x,y,u) + f(x,y) with periodic boundary conditions.
+The function g is easily tunable.
+The code is written as a primarily instructional code for a student who might
+have some familiarity with linear multigrid, and would want a slightly more
+general approach, or a student who can solve a linear boundary equation, but
+is now looking to include time.
+There are no detailed explanations of what restriction or prolongation do, but
+more details are provided in how the linearization occurs and what happens as
+a function of time.</p>
+
+<h2>BDD</h2>
+
+<ul>
+  <li><a href="mgnet-codes-bdd.html">link to code</a></li>
+</ul>
+
+<p>A single processor copyrighted Fortran-77 code by Jan Mandel for balancing
+domain decomposition.
+Jan and Solvers International own the copyright.</p>
+
+<h2>Borzi</h2>
+
+<ul>
+  <li><a href="mgnet-codes-borzi.html">link to code</a></li>
+</ul>
+
+<p>Alfio Borzi's public domain Fortran-77 codes.
+Controlla is for optimality systems and is a full multigrid method for the
+solution of an optimality system arising from optimal control of the solid
+fuel ignition model.
+Santafe is for open-loop optimal for open-loop optimal control of
+time-dependent reaction-diffusion systems.
+The code is designed to solve for tracking and terminal observation problems
+also in combination with receding horizon techniques.</p>
+
+<h2>BOXMG</h2>
+
+<ul>
+  <li><a href="mgnet-codes-boxmg.html">link to code</a></li>
+</ul>
+
+<p>A single processor black box multigrid Fortran-77 code written by Victor
+Bandy and Joel Dendy.
+This might be public domain software, but it might be owned by the US
+Department of Energy (DOE).
+Check with Joel Dendy.</p>
+
+<h2>Bunner</h2>
+
+<ul>
+  <li><a href="mgnet-codes-bunner.html">link to code</a></li>
+</ul>
+
+<p>A public domain, parallel processor replacement Fortran-77 code for Mudpack
+written by Bernard Bunner.
+It requires both MPI and the C preprocessor.
+This code features staggered grids, rectangular domains, constant mesh spacing
+in 2 or 3 dimensions, V or W cycling, full weighting for the restriction and
+bilinear interpolation for the correction, either vertex-centered or
+cell-centered operations, and periodic, Neumann, or Dirichlet boundary
+conditions.</p>
+
+<h2>DAGH</h2>
+
+<ul>
+  <li><a href="mgnet-codes-dagh.html">link to code</a></li>
+</ul>
+
+<p>A one or more processor C++ copyrighted library written by M. Parashar and
+J. C. Browne.
+DAGH (Distributed Adaptive Grid Hierarchy) provides a program development
+infrastructure for implementation of solutions of partial differential
+equations using adaptive mesh refinement algorithms.
+The principles of hierarchical abstraction and separation of concerns were
+incorporated into the development of DAGH.
+The code solves problems in two and three dimensions.
+It includes multigrid as an option.</p>
+
+<h2>Douglas</h2>
+
+<ul>
+  <li><a href="mgnet-codes-douglas.html">link to code</a></li>
+</ul>
+
+<p>A one or more processor public domain Fortran-77 code written by Craig
+Douglas.
+This requires MPI and the preprocessor m4.
+Some simple example multigrid codes using MPI for message passing are
+provided.</p>
+
+<h2>Featflow</h2>
+
+<ul>
+  <li><a href="http://www.featflow.de">link to Featflow web site</a></li>
+</ul>
+
+<p>A single processor Fortran-77 copyrighted code written by Stefan Turek et
+al.
+FEATFLOW is designed for the following MGNet Codesthree classes of
+applications:
+<ul>
+  <li>Education of students</li>
+  <li>Scientific research</li>
+  <li>Industrial applications</li>
+</ul>
+FEATFLOW is both a user oriented as well as a general purpose subroutine
+system for the numerical solution of the incompressible Navier-Stokes
+equations in two and three space dimensions.
+It is based on the packages FEAT2D and FEAT3D.</p>
+
+<h2>Fortuna</h2>
+
+<ul>
+  <li><a href="mgnet-codes-fortuna.html">link to code</a></li>
+</ul>
+
+<p>A public domain, single processor code written by Armando de Oliveira
+Fortuna.
+This is a tutorial solver for the Laplace/Poisson equations which allows the
+user to select between multigrid, Line-SOR, or Point-SOR.  It is a nice tool
+to introduce multigrid to new students.
+They can see for themselves how multigrid compares to SOR.</p>
+
+<h2>GMD</h2>
+
+<ul>
+  <li><a href="mgnet-codes-gmd.html">link to code</a></li>
+</ul>
+
+<p>The copyrighted Fortran-77 GMD multigrid solvers MG00.
+MG00 was written by Hartmut Foerster and Kristian Witsch.</p>
+
+<h2>GRUMMP</h2>
+
+<ul>
+  <li><a href="http://tetra.mech.ubc.ca/GRUMMP">link to GRUMMP web site</a></li>
+</ul>
+
+<p>This is a code written by Carl Ollivier-Gooch.
+The goal of the GRUMMP project is to develop automatic mesh generation
+software for unstructured meshes with mixed element types.
+The software will be able to produce high-quality meshes which meet
+user-defined mesh density requirements, using elements appropriate for the
+geometry and physics of a particular problem.
+We envision a system in which common types of physical problems have
+pre-defined mesh sizing and element aspect ratio functions, allowing easy
+generation of meshes for these applications areas.
+For flexibility and generality, the user will also be able to prescribe these
+functions (for totally different applications) or modify the pre-defined
+behaviors (to provide a quality mesh in the wake of an airplane wing, for
+example).</p>
+
+<h2>Integra</h2>
+
+<ul>
+  <li><a href="mgnet-codes-integra.html">link to code</a></li>
+</ul>
+
+<p>A single processor public domain Fortran-77 program by Alfio Borzi to solve
+nonlinear integral equations using a multigrid method.</p>
+
+<h2>Kaskade</h2>
+
+<ul>
+  <li><a href="mgnet-codes-kaskade.html">link to code</a></li>
+</ul>
+
+<p>A single processor copyrighted C program by Rainer Roitsch, Bodo Erdmann,
+and Jens Lang.
+The copyright owner is Konrad-Zuse Zentrum (ZIB).
+Kaskade is a finite element, adaptive mesh code for solving problems in two
+and three dimensions.</p>
+
+<h2>LASPack</h2>
+
+<ul>
+  <li><a href="mgnet-codes-laspack.html">link to code</a></li>
+</ul>
+
+<p>This is a copyrighted ANSI C program written by Tomas Skalicky.
+LASPack is a package for solving large sparse systems of linear equations like
+those which arise from discretization of partial differential equations.
+It contains classical as well as selected state of the art algorithms which
+are commonly used for large sparse systems such as conjugate gradient-like
+methods for non-symmetric systems (CGN, GMRES, BiCG, QMR, CGS, and BiCGStab)
+and multilevel methods such as multigrid and conjugate gradient method
+preconditioned by either a multigrid or BPX preconditioner.
+Two sets of documentation are included:  PostScript and html formats.</p>
+
+<h2>LPARX</h2>
+
+<ul>
+  <li><a href="mgnet-codes-lparx.html">link to code</a></li>
+</ul>
+
+<p>This is a one or more processor copyrighted C++ library written by Scott R.
+Kohn and Scott B. Baden.
+The copyright owners are the two authors and The Regents of the University of
+California.
+LPARX provides efficient run-time support for dynamic, non-uniform scientific
+calculations running on MIMD distributed memory architectures.
+It extends HPF's data decomposition model to provide support for dynamic,
+block irregular data structures.
+LPARX represents data decompositions as first-class objects and expresses data
+dependencies in a manner which is logically independent of data decomposition
+and problem dimension.</p>
+
+<h2>Madpack2</h2>
+
+<ul>
+  <li><a href="mgnet-codes-madpack2.html">link to code</a></li>
+</ul>
+
+<p>A public domain single processor family of solvers written by Craig
+Douglas.
+There are separate versions in C and Fortran-77.
+This is an abstract multilevel solver.
+It is PDE, domain, and discretization independent.
+Examples from two and three dimensions are provided.</p>
+
+<h2>Madpack5</h2>
+
+<ul>
+  <li><a href="mgnet-codes-madpack5.html">link to code</a></li>
+</ul>
+
+<p>A public domain one or more processor object oriented code written
+primarily by Craig Douglas.
+There have been several other contributors (e.g., David Fyfe and Juan Santos).
+The parallel parts of the code is available upon request only.
+Madpack5 is an abstract multilevel solver.
+It is PDE, domain, and discretization independent.
+It only handles linear problems, however.
+A paper describing the code is available on MGNet.
+Madpack5 is an object oriented code.
+The user interface is written in C.
+Most of the solvers are written in Fortran-77+m4.
+The same calling sequence is used independent of the data's type (real and
+complex, single and double precision, user defined are supported).
+The user interface builds all of the truly nasty data structures used
+internally by the code.</p>
+
+<h2>MGD9V</h2>
+
+<ul>
+  <li><a href="mgnet-codes-mgd9v.html">link to code</a></li>
+</ul>
+
+<p>This is a copyrighted single processor Fortran-77 code written by Paul M.
+DeZeeuw.
+The copyright owner is probably CWI.
+MGD9V is a black box multigrid solver that assumes that a general second order
+elliptic problem in two dimensions has been discretized using a nine point
+operator.</p>
+
+<h2>MGGHAT</h2>
+
+<ul>
+  <li><a href="mgnet-codes-mgghat.html">link to code</a></li>
+</ul>
+
+<p>This is a (mostly) public domain, single processor Fortran-77 code written
+by Bill Mitchell.
+MGGHAT (Multi Grid Galerkin Hierarchical Adaptive Triangles), version 1.1, is
+an adaptive grid refinement multigrid code for solving linear second order
+elliptic partial differential equations on polygonal domains with linear,
+quadratic, or cubic elements over triangles.</p>
+
+<h2>MGLab</h2>
+
+<ul>
+  <li><a href="mgnet-codes-mglab.html">link to code</a></li>
+</ul>
+
+<p>This is a public domain set of Matlab functions written by James Bordner
+and Faisal Saied.
+MGLab is an interactive environment for experimenting with multigrid
+algorithms.
+MGLab can solve two dimensional elliptic partial differential equations using
+finite differences and includes several built-in problems (Poisson, Helmholtz,
+discontinuous coefficient problems, and nonselfadjoint problems).
+A number of parameters controlling the V cycle can be set using a point and
+click mechanism.
+The menu based user interface also allows a choice of several Krylov subspace
+accelerators (PCG, GMRES(k), and BiCGSTAB).
+The package exploits Matlab's visualization and sparse matrix features.
+It has also been structured to be extensible.</p>
+
+<h2>MUDPACK</h2>
+
+<ul>
+  <li><a href="http://www2.cisl.ucar.edu/resources/legacy/mudpack">link to MUDPACK web site</a></li>
+</ul>
+
+<p>This is copyrighted, licensed software in Fortran for one or more
+processors, written by John Adams.
+MUDPACK 4.0 replaces and is incompatible with earlier versions.
+The software includes a suite of portable Fortran programs which automatically
+discretize and use multigrid techniques to generate second- and fourth-order
+approximations to elliptic Partial Differential Equations (PDEs) on
+rectangular regions.
+The elliptic PDEs can be real or complex in two- and three-dimensions with any
+combination of mixed derivatives, specified, or periodic boundary conditions.
+Multigrid V or W cycles which use point, line(s), or planar relaxation and
+fully weighted residual restriction are available for algorithm tuning to
+obtain optimal multigrid performance.
+MUDPACK was written to avoid repeated &quot;re-invention of the wheel&quot; in
+human code development time which can be at least as important as saving
+machine cycles.</p>
+
+<h2>ParMGridGen</h2>
+
+<ul>
+  <li><a href="mgnet-codes-parmgridgen.html">link to code</a></li>
+</ul>
+
+<p>This is copyrighted C code, written by Irene Moulitsas.
+ParMGridGen-1.0 is a highly optimized serial and parallel library for
+obtaining a sequence of successive coarse grids that are well suited for
+geometric multigrid methods.
+The quality of the elements of the coarse grids is optimized using a
+multilevel framework.
+The parallel library is based on MPI and is portable to a wide range of
+architectures.</p>
+
+<h2>pARMS</h2>
+
+<ul>
+  <li><a href="http://www-users.cs.umn.edu/~saad/software/pARMS/">link to pARMS web site</a></li>
+</ul>
+
+<p>Yousef Saad's parallel Algebraic Recursive Multilevel Solvers.</p>
+
+<h2>PHAML</h2>
+
+<ul>
+  <li><a href="http://math.nist.gov/phaml">link to PHAML web site</a></li>
+</ul>
+
+<p>Parallel Hierarchical Adaptive MultiLevel (PHAML) is Bill Mitchell's
+Fortran 90 module for the solution of second order linear elliptic partial
+differential equations with Dirichlet, Neumann (natural) or Mixed boundary
+conditions.</p>
+
+<h2>PLTMG</h2>
+<ul>
+  <li><a href="mgnet-codes-pltmg.html">link to code</a></li>
+</ul>
+
+<p>PLTMG (Piecewise Linear Triangle Multi-Grid), version 11.0, is an adaptive
+multigrid solver for elliptic partial differential equations in general
+regions of the plane.
+It is a copyrighted Fortran and C code by Randolf E. Bank.</p>
+
+<h2>Prometheus</h2>
+
+<ul>
+  <li><a href="http://seesar.lbl.gov/anag/staff/madams/prometheus/">
+  link to Olympus site</a>
+</ul>
+
+<p>This is Mark Adams' copyrighted parallel C code and is part of the Olympus
+software package.
+Prometheus is a multigrid solver for finite element matrices on unstructured
+meshes in solid mechanics.
+Prometheus uses maximal independent sets on modified matrix graphs; these node
+sets are meshed with a Delaunay mesher to provide coarse <em>grids</em> that are used
+with standard finite element shape functions to provide interpolation operators
+for multigrid.
+Coarse grid operators are formed with these interpolation operators and the
+finer grid matrix in a standard Galerkin way.</p>
+
+<h2>UG</h2>
+
+<ul>
+  <li><a href="http://atlas.gcsc.uni-frankfurt.de/~ug/index.html">link to UG web site</a></li>
+</ul>
+
+<p>This is a copyrighted single processor C code managed by Peter Bastian.
+UG is a flexible software library for the development of adaptive multigrid
+methods on unstructured meshes in two or three spatial dimensions.
+UG implements most parts in a problem independent way so that the software can
+be reused for many different applications.
+In order to use the software here, you must get a license which contains the
+missing header file.</p>
+
+<h2>Vanek</h2>
+
+<ul>
+  <li><a href="mgnet-codes-vanek.html">link to code</a></li>
+</ul>
+
+<p>This is a single processor public domain Fortran-77 code written by Petr
+Vanek.
+This is an algebraic multigrid solver based on smoothed aggregation.
+The code is reliable if the model consists of solids and plates.
+Some problems with convergence may occur in the case of very thin and curved
+shells.</p>
+
+<h2>Wesseling</h2>
+
+<ul>
+  <li><a href="mgnet-codes-wesseling.html">link to code</a></li>
+</ul>
+
+<p>A single processor public domain Fortran-77 code written by Pieter
+Wesseling.
+The file mglab.for is a tutorial multigrid program.
+It solves elliptic boundary values in one dimension.
+The user may choose various multigrid cycles, transfer operators, smoothing
+methods, and nested iteration, and defect correction.
+Cell centered and vertex centered discretization and multigrid is included.
+Documentation is included in the program.
+The program is written in portable Fortran-77, and has run on MS-DOS PC's and
+Unix based computers.
+The methods used are fully described in the following book:
+P. Wesseling, An Introduction to Multigrid Methods, Wiley, Chichester,
+1992.</p>
+
+<h2>Wienands</h2>
+
+<ul>
+  <li><a href="mgnet-codes-wienands.html">link to code</a></li>
+</ul>
+
+<p>LFA00_2D_scalar is a copyrighted Fourier analysis program written by Roman
+Wienands in Fortran-77.
+Both two and three grid analysis for 2D scalar partial differential equations
+is included.
+The code supports many variants of coarsening strategies, coarse grid
+discretization, prolongation, restriction, and relaxation methods.</p>
+<!-- InstanceEndEditable --></div>
+
+<div id="trailer_signoff">
+<p>Cheers,<br>
+<a href="mailto:craig.c.douglas@gmail.com?subject=Comment from MGNet.org web pages">Craig C. Douglas</a></p>
+<p>Last modified:&nbsp;
+<script language="JavaScript">
+<!--
+  document.write("<i>" + document.lastModified + "</i>");
+// -->
+</script></p>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>
